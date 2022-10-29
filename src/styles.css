@@ -1,0 +1,69 @@
+:root{
+    --main-color: rgba(211, 153, 250, 0.76);
+    --standard-margin: 60px;
+    --button-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    --button-hover-color: rgba(126, 12, 210, 0.76);
+)
+}
+body{
+    margin: var(--standard-margin);
+}
+h1,h2,h3{
+    text-align: center;
+    margin: 0;
+}
+h2{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+}
+h1{
+    font-size: 70px;
+}
+h3{
+    font-size: 20px;
+    opacity: 0.7;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contact-page, .about-link {
+    padding: 20px 15px;
+    border: 1px solid darkred;
+    border-radius: 20px;
+    margin: 25px;
+    text-decoration: none;
+
+}
+.contact-page{
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: var(--button-box-shadow);
+}
+.about-link{
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+.meditation-app, .weather-app, .yogurt-app{
+
+    padding: 20px 15px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+    box-shadow: var(--button-box-shadow);
+}
+.meditation_app_img, .weather_app_img, .yogurt_app_img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+a:hover{
+    color: var(--button-hover-color);
+}
