@@ -8,6 +8,12 @@
 body{
     margin: var(--standard-margin);
 }
+
+.hero{
+    background-color: rgba(211, 153, 250, 0.1);
+    padding: 130px 10px;
+
+}
 h1,h2,h3{
     text-align: center;
     margin: 0;
@@ -23,6 +29,7 @@ h1{
 h3{
     font-size: 20px;
     opacity: 0.7;
+    margin-top: 20px;
 }
 .navigation{
     display: flex;
@@ -41,6 +48,7 @@ h3{
 .contact-page{
     background-color: var(--main-color);
     color: white;
+    border-color: var(--main-color);
     box-shadow: var(--button-box-shadow);
 }
 .about-link{
