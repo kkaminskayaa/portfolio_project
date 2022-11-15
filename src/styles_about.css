@@ -1,31 +1,44 @@
 :root {
     --main-color: rgb(130, 130, 255);
+    --button-hover-color: rgba(130, 130, 255, 0.86);
     --secondary-color: rgba(255, 169, 255, 0.3);
+    --heading-font-family: 'EB Garamond', serif;
+    --text-font-family: 'Alegreya', serif;
+
+}
+.navigation-design a{
+    font-family: var(--text-font-family);
 }
 
 body{
-    margin: 60px auto;
-    max-width: 800px;
+    margin: 80px auto;
+
 }
 h1,h2,h3{
     text-align: center;
     margin: 0;
 }
 h1{
-    font-size: 90px;
+    font-size: 64px;
+    line-height: 1.5;
+    font-family: var(--heading-font-family);
 }
 
 h3{
-    font-size: 24px;
+    font-size: 22px;
     opacity: 0.7;
+    font-family: var(--text-font-family);
 
 }
 p{
+    font-family: var(--text-font-family);
     font-size: 18px;
     line-height: 1.5;
+    font-weight: normal;
     text-align: center;
     border-radius: 4px;
     margin: 40px 18px;
+
 }
 .all-content-about-me{
     display: flex;
@@ -43,9 +56,36 @@ p{
 .img-fluid{
     max-width: 100%;
     height: auto;
+
 }
 
 .envelope{
     color: var(--main-color);
     font-size: large;
+}
+
+.btn-work{
+    padding: 20px 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 20px 130px;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+    box-shadow: var(--button-box-shadow);
+    font-family: var(--text-font-family);
+    font-size: 19px;
+}
+.btn-work:hover{
+    background-color: var(--button-hover-color);
+    color: white;
+}
+.about-section{
+    text-align: center;
+    padding: 0;
+}
+
+.about-section-content{
+    margin: 50px;
 }
