@@ -1,0 +1,49 @@
+:root {
+    --main-color: rgb(130, 130, 255);
+    --button-hover-color: rgba(130, 130, 255, 0.86);
+    --secondary-color: rgba(255, 169, 255, 0.3);
+    --heading-font-family: 'EB Garamond', serif;
+    --text-font-family: 'Alegreya', serif;
+
+}
+.navigation-design a{
+    font-family: var(--text-font-family);
+}
+
+body {
+    margin: 80px auto;
+}
+
+h1,h2,h3{
+    text-align: center;
+    margin: 0;
+}
+h1{
+    font-size: 64px;
+    line-height: 1.5;
+    font-family: var(--heading-font-family);
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--text-font-family);
+    line-height: 1.5;
+
+
+}
+p{
+    font-family: var(--text-font-family);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 4px;
+    margin: 40px 18px;
+
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}

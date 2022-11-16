@@ -81,11 +81,11 @@ p{
     background-color: var(--button-hover-color);
     color: white;
 }
-.about-section{
+.content-container{
     text-align: center;
     padding: 0;
 }
 
-.about-section-content{
+.content{
     margin: 50px;
 }
