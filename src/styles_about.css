@@ -4,6 +4,10 @@
     --secondary-color: rgba(255, 169, 255, 0.3);
     --heading-font-family: 'EB Garamond', serif;
     --text-font-family: 'Alegreya', serif;
+    --icons-color: #9fb9d7;
+    --background-color: rgba(211, 153, 250, 0.1);
+    --standard-margin: 60px;
+    --button-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 
 }
 .navigation-design a{
@@ -14,10 +18,27 @@ body{
     margin: 80px auto;
 
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     text-align: center;
     margin: 0;
 }
+
+.btn-contact-page, .btn-about {
+    padding: 20px 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 25px;
+    text-decoration: none;
+}
+.btn-contact-page {
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+    box-shadow: var(--button-box-shadow);
+    font-family: var(--heading-font-family);
+    font-size: 19px;
+}
+
 h1{
     font-size: 64px;
     line-height: 1.5;
@@ -88,4 +109,87 @@ p{
 
 .content{
     margin: 50px;
+}
+.photo-place{
+    margin: 13px 0;
+    padding: 88px 0;
+}
+
+footer .email-link{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--heading-font-family);
+}
+
+footer .email-link:hover{
+    color: var(--main-color);
+}
+
+footer .social-links a{
+    margin: 0 20px;
+    color: var(--main-color);
+    background-color: var(--background-color);
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+footer .contact-box{
+    background-color: var(--background-color);
+    padding: 30px 120px;
+    margin:55px 0;
+    border-radius: 10px;
+}
+
+footer .contact-box p{
+    font-family: var(--text-font-family);
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+}
+
+
+footer .contact-box h4{
+    font-size: 45px;
+}
+footer .contacting-place a:hover{
+    color: white;
+    background-color: var(--main-color);
+    opacity: 0.8;
+}
+
+@media(max-width:900px){
+    .hero{
+        padding: 80px 20px;
+    }
+    .photo-place{
+        margin: 0;
+        padding: 0;
+    }
+    .content{
+        background-color: var(--background-color);
+        margin: 0 0 33px;
+
+        padding: 130px 10px;
+    }
+    body{
+        margin: 0;
+    }
+
+}
+.photo-place{
+
+    margin:0;
+}
+.footer{
+    font-family: var(--text-font-family);
+}
+.github-link{
+    color: var(--main-color);
 }

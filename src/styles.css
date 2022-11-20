@@ -139,3 +139,10 @@ footer .contact-box h4{
       padding: 80px 20px;
   }
 }
+
+.footer{
+    font-family: var(--text-font-family);
+}
+.github-link{
+    color: var(--main-color);
+}

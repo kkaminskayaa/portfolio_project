@@ -4,8 +4,12 @@
     --secondary-color: rgba(255, 169, 255, 0.3);
     --heading-font-family: 'EB Garamond', serif;
     --text-font-family: 'Alegreya', serif;
-
+    --icons-color: #9fb9d7;
+    --background-color: rgba(211, 153, 250, 0.1);
+    --standard-margin: 60px;
+    --button-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
+
 .navigation-design a{
     font-family: var(--text-font-family);
 }
@@ -13,15 +17,52 @@
 body {
     margin: 80px auto;
 }
+.heading-place{
+    background-color: var(--background-color);
+    padding: 30px 120px;
+    margin:55px 0;
+    border-radius: 10px;
 
-h1,h2,h3{
+}
+.content a{
+    color: var(--main-color);
+}
+.content h1{
+    font-size: 64px;
+    line-height: 80px;
+
+}
+.content h3{
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+h1,h2,h3,h4{
     text-align: center;
     margin: 0;
 }
-h1{
-    font-size: 40px;
-    line-height: 1.5;
+.btn-contact-page, .btn-about {
+    padding: 20px 15px;
+    border: 1px solid darkred;
+    border-radius: 20px;
+    margin: 25px;
+    text-decoration: none;
+}
+.btn-contact-page{
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+    box-shadow: var(--button-box-shadow);
     font-family: var(--heading-font-family);
+    font-size: 19px;
+}
+
+h1{
+    font-size: 45px;
+    font-family: var(--heading-font-family);
+    line-height: 1.5;
+    text-align: center;
 }
 
 h3{
@@ -29,7 +70,7 @@ h3{
     font-weight: bold;
     font-family: var(--text-font-family);
     line-height: 1.5;
-
+    text-align: left;
 
 }
 p{
@@ -37,13 +78,87 @@ p{
     font-size: 18px;
     line-height: 1.5;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     border-radius: 4px;
-    margin: 40px 18px;
+    margin: 25px 18px;
 
 }
 
 .img-fluid{
     max-width: 100%;
     height: auto;
+}
+
+footer .email-link{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--heading-font-family);
+}
+
+footer .email-link:hover{
+    color: var(--main-color);
+}
+
+footer .social-links a{
+    margin: 0 20px;
+    color: var(--main-color);
+    background-color: var(--background-color);
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+footer .contact-box{
+    background-color: var(--background-color);
+    padding: 30px 120px;
+    margin:55px 0;
+    border-radius: 10px;
+}
+
+footer .contact-box p{
+    font-family: var(--text-font-family);
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+}
+
+
+footer .contact-box h4{
+    font-size: 45px;
+    font-family: var(--heading-font-family);
+}
+
+@media(max-width:900px){
+    .hero{
+        padding: 80px 20px;
+    }
+}
+
+.footer{
+    font-family: var(--text-font-family);
+}
+
+footer .contacting-place a:hover{
+    color: white;
+    background-color: var(--main-color);
+    opacity: 0.8;
+}
+
+
+.github-link{
+    color: var(--main-color);
+}
+
+@media (max-width: 900px){
+    .content h1, h3, p {
+        display: block;
+        text-align: center;
+
+    }
 }
