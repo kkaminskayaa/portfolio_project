@@ -89,7 +89,7 @@ p{
     padding: 20px 15px;
     border: 1px solid;
     border-radius: 20px;
-    margin: 20px 130px;
+    margin: 20px auto;
     text-decoration: none;
     background-color: var(--main-color);
     color: white;
