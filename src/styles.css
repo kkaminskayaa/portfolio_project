@@ -8,13 +8,16 @@
     --button-hover-color: rgba(126, 12, 210, 0.76);
     --heading-font-family: 'EB Garamond', serif;
     --text-font-family: 'Alegreya', serif;
-)
+
+}
+.project-description{
+    font-family: var(--text-font-family);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 19px;
 }
 .navigation-design a{
     font-family: var(--text-font-family);
-}
-body{
-    /*margin: var(--standard-margin);*/
 }
 
 .hero{
@@ -68,7 +71,7 @@ h3{
     font-family: var(--heading-font-family);
     font-size: 19px;
 }
-.meditation-app, .weather-app, .yogurt-app{
+.meditation-app, .weather-app, .weather-react-app{
 
     padding: 20px 15px;
     border-radius: 20px;
@@ -80,6 +83,7 @@ h3{
     box-shadow: var(--button-box-shadow);
     font-family: var(--heading-font-family);
     font-size: 19px;
+    
 }
 .meditation_app_img, .weather_app_img, .yogurt_app_img{
     max-width: 100%;
